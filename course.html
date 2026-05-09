@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+
+    <style>
+        body{
+            background:linear-gradient(180deg,rgb(71, 12, 71),rgb(9, 9, 71),rgb(98, 15, 230),rgb(43, 43, 43));
+            color:white;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        marquee {
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .course {
+            display: block;
+            width: 90%;
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin: 20px auto;
+        }
+
+        .python {
+            background-color: rgb(252, 248, 4);
+            color: black;
+        }
+
+        .java {
+            background-color: #35bfd1;
+        }
+
+        .c {
+            background-color: #064072;
+        }
+
+        .html {
+            background-color: orangered;
+        }
+
+        img {
+            border-radius: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: darkblue;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .details {
+            display: none;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: black;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+
+        .details:target {
+            display: block;
+        }
+        .navbar{
+            height:60px;
+            background-color:black;
+            width:100%;
+            padding:5px;
+        }
+        .ul-nav{
+            display:flex;
+            flex-flow:row wrap;
+            justify-content:right;
+            align-items:center;
+            gap:20px;
+            list-style-type:none;
+        }
+
+        .ul-nav a{
+            padding:10px;
+            text-decoration:none;
+            color:white;
+            font-size:1.3rem;
+        }
+
+        .ul-nav li:hover{
+            color:green;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <ul class="ul-nav">
+            <a href="home.html"><li>Home</li></a>
+            <a href="course.html"><li>Courses</li></a>
+            <a href="progress.html"><li>Progress</li></a>
+            <a href="about.html"><li>About</li></a>
+        </ul>
+    </nav>
+
+    <marquee direction="right">COURSES</marquee>
+
+    
+    <div class="course html">
+        <img src="html.jpeg" alt="error" height="100px" width="100px">
+
+        <h2>HTML AND CSS</h2>
+        <h2>6 Months course</h2>
+        <h3>₹7999</h3>
+
+        <h2>Instructor : SUDHARSAN</h2>
+
+        <a href="#htmlInstructor">View Instructor Details</a>
+
+        <div class="details" id="htmlInstructor">
+            <h3>SUDHARSAN</h3>
+            <p>Experience: 5 Years</p>
+            <p>Specialist in HTML, CSS, JavaScript</p>
+            <p>Email: ksudharsan@gmail.com</p>
+            <p>Phone: 9876543210</p>
+        </div>
+    </div>
+
+    
+    <div class="course java">
+        <img src="java.jpeg" alt="error" height="100px" width="100px">
+
+        <h2>JAVA</h2>
+        <h2>6 Months course</h2>
+        <h3>₹9999</h3>
+
+        <h2>Instructor : CHANDRU</h2>
+
+        <a href="#javaInstructor">View Instructor Details</a>
+
+        <div class="details" id="javaInstructor">
+            <h3>CHANDRU</h3>
+            <p>Experience: 6Years</p>
+            <p>Expert in Java, Spring Boot</p>
+            <p>Email: chandru@gmail.com</p>
+            <p>Phone: 9123456780</p>
+        </div>
+    </div>
+
+    
+    <div class="course python">
+        <img src="python.jpeg" alt="error" height="100px" width="100px">
+
+        <h2>PYTHON</h2>
+        <h2>4 Months course</h2>
+        <h3>₹6999</h3>
+
+        <h2>Instructor : YADHAV</h2>
+
+        <a href="#pythonInstructor">View Instructor Details</a>
+
+        <div class="details" id="pythonInstructor">
+            <h3>YADHAV</h3>
+            <p>Experience: 4 Years</p>
+            <p>Expert in Python, AI, Data Science</p>
+            <p>Email: yadhav@gmail.com</p>
+            <p>Phone: 9012345678</p>
+        </div>
+    </div>
+
+    
+    <div class="course c">
+        <img src="c .jpeg" alt="error" height="100px" width="166px">
+
+        <h2>C AND C++</h2>
+        <h2>5 Months course</h2>
+        <h3>₹4999</h3>
+
+        <h2>Instructor : RITHIK</h2>
+
+        <a href="#cInstructor">View Instructor Details</a>
+
+        <div class="details" id="cInstructor">
+            <h3>RITHIK</h3>
+            <p>Experience: 6 Years</p>
+            <p>Specialist in C, C++, DSA</p>
+            <p>Email: rithik@gmail.com</p>
+            <p>Phone: 9988776655</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
