@@ -44,8 +44,10 @@ body{
     background-repeat: no-repeat;
 }
 
-.hero-content.begin{
-    top:100px;
+.hero-content .begin{
+    position:relative;
+    top:30px;
+    font-size:5rem;
 }
 .hero-content{
     text-align:center;
@@ -193,6 +195,8 @@ h2{
     font-size: 0.8rem;
     font-family: Arial, sans-serif;
 }
+/*------------------------*/
+
 
 .hero-buttons{
     display:flex;
@@ -214,6 +218,7 @@ h2{
     background-color:purple;
     color:white;
     transition:1s all;
+    cursor:pointer;
 }
 
 /*------ABOUT PAGE---------*/

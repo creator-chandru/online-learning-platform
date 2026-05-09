@@ -33,6 +33,39 @@
         color:green;
     }
 
+    .progress-container{
+        border:2px solid black;
+        margin:20px;
+        display:flex;
+        flex-flow:row wrap;
+        justify-content:space-between;
+        text-transform:uppercase;
+        font-size:1.3rem;
+        padding:10px;
+    }
+
+    span p{
+        font-size:2rem;
+        margin-right:10px;
+    }
+
+    .progress-container:hover{
+        transform:scale(1.03);
+        transition:0.75s all;
+    }
+
+    h1{
+        text-align:center;
+    }
+    hr{
+        display:block;
+        margin:auto;
+        background-color:brown;
+        border:none;
+        width:20%;
+        height:3px;
+        margin-bottom:10px;
+    }
 </style>
 
 <header>
@@ -46,29 +79,51 @@
     </nav>
 </header>
 
-<body>
- <h2>NAME : VARUN KARTHICK</h2>
- <h2>COURSE SELECTED : JAVA </h2>
- <h2>PROGRESS = 80%</h2>
- 
- <span style="color: gold; font-size: 50px;">
-★ ★ ★ ★
-</span>
+    <body>
 
-<h2>NAME : YOGESH</h2>
- <h2>COURSE SELECTED : C AND C++ </h2>
- <h2>PROGRESS = 70%</h2>
- 
- <span style="color: gold; font-size: 50px;">
-★ ★ ★ 
-</span>
+        <h1>Student Progress List</h1>
+        <hr>
+        <label>Search:
+            <input type="text">
+        </label>
+        
+        <div class="progress-container">
+            <div class="content">
+                <h2>NAME : VARUN KARTHICK</h2>
+                <h2>COURSE SELECTED : JAVA </h2>
+                <h2>PROGRESS = 80%</h2>
+            </div>
+        
+            <span style="color: gold; font-size: 50px;">
+                <p>Student Progress</p>
+            ★ ★ ★ ★
+            </span>
+        </div>
 
-<h2>NAME : RAGUL </h2>
- <h2>COURSE SELECTED : PYTHON </h2>
- <h2>PROGRESS = 100%</h2>
- 
- <span style="color: gold; font-size: 50px;">
-★ ★ ★ ★ ★
-</span>
-</body>
+        <div class="progress-container">
+            <div class="content">
+                <h2>NAME : YOGESH</h2>
+                <h2>COURSE SELECTED : C AND C++ </h2>
+                <h2>PROGRESS = 70%</h2>
+            </div>
+        
+            <span style="color: gold; font-size: 50px;">
+                <p>Student Progress</p>
+              ★ ★ ★ 
+            </span>
+        </div>
+
+        <div class="progress-container">
+            <div class="content">
+                <h2>NAME : RAGUL </h2>
+                <h2>COURSE SELECTED : PYTHON </h2>
+                <h2>PROGRESS = 100%</h2>
+            </div>
+        
+            <span style="color: gold; font-size: 50px;">
+                <p>Student Progress</p>
+            ★ ★ ★ ★ ★
+            </span>
+        </div>
+    </body>
 </html>
